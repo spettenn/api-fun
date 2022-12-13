@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+
+/* import getEpicData from '../components/earth'; */
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -19,7 +22,7 @@ function SectionTwo() {
 					<FontAwesomeIcon className='icon' icon={faArrowUp} />
 				</a>
 			</div>
-			section-two
+			<h1 className='section_two_title'>SECTION TWO</h1>
 			<div className='font_container'>
 				<a href='#section_three'>
 					<FontAwesomeIcon className='icon' icon={faArrowDown} />

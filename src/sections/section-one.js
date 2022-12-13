@@ -8,10 +8,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 const Title = styled.h1`
 	text-align: center;
 	margin-top: 0;
-	font-size: 72px;
-	background: -webkit-linear-gradient(#800000, #eee, #333);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: white;
 `;
 
 const SectionOne = () => {
@@ -35,7 +32,12 @@ const SectionOne = () => {
 
 	return (
 		<SectionNasa id='section_one'>
-			<Title>{nasaData.title}</Title>
+			<div className='filler'></div>
+			<div className='content'>
+				<Title>{nasaData.title}</Title>
+				<p className='desc'>{nasaData.explanation}</p>
+			</div>
+
 			{/* <Joke /> */}
 			<div className='font_container'>
 				<a href='#section_two'>
