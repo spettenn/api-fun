@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 /* import Joke from '../components/joke'; */
+import LiveDate from '../components/date';
 
 const Title = styled.h1`
 	text-align: center;
@@ -36,6 +37,7 @@ const SectionOne = () => {
 			<div className='content'>
 				<Title>{nasaData.title}</Title>
 				<p className='desc'>{nasaData.explanation}</p>
+				<LiveDate />
 			</div>
 
 			{/* <Joke /> */}
