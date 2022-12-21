@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import Countdown from '../components/newYear.js';
 
 const SectionDiez = styled.section`
 	height: 100vh;
@@ -38,6 +39,9 @@ function SectionFive() {
 				</a>
 			</div>
 			<h1 className='section_two_title'>SECTION FIVE</h1>
+			<div className='section_five_main'>
+				<Countdown />
+			</div>
 			<div className='font_container'>
 				<a href='#section_five'>
 					<FontAwesomeIcon className='icon' icon={faArrowDown} />

@@ -50,6 +50,7 @@ const ContactForm = () => {
 				<br />
 				<textarea
 					name='message'
+					className='form_text_area'
 					value={formState.message}
 					onChange={handleChange}
 				/>

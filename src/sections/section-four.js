@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import ContactForm from '../components/form';
-import Rocket from '../components/rocket';
+/* import Rocket from '../components/rocket'; */
 const SectionQuatro = styled.section`
 	height: 100vh;
 	background-color: #333;
@@ -21,7 +21,7 @@ function SectionFour() {
 					<FontAwesomeIcon className='icon' icon={faArrowUp} />
 				</a>
 			</div>
-			<Rocket />
+			{/* <Rocket /> */}
 			<div className='section_form_container'>
 				<ContactForm />
 			</div>

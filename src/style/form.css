@@ -6,19 +6,26 @@
     width: 100%;
 }
 .form_input {
-    width: 100%;
+    width: 98%;
     border-radius: 3px;
-    border: 1px solid #ccc;
+    border: none;
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
-
+}
+.form_text_area {
+    width: 98%;
+    border-radius: 3px;
+    border: none;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
 }
 form {
     display: flex;
     flex-direction: column;
     color: white;
     padding: 1rem;
-    border: 10px solid radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
+    border: 1px solid white;
 }
 
 

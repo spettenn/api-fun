@@ -9,7 +9,7 @@ import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const SectionFun = styled.section`
 	height: 100vh;
-	background-color: #333;
+	background-color: #212534;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -27,6 +27,9 @@ function SectionTwo() {
 				SECTION TWO <br />
 				<Clock />
 			</h1>
+			<div className='section_two_main'>
+				<div class='card'>This is a Card</div>
+			</div>
 			<div className='font_container'>
 				<a href='#section_three'>
 					<FontAwesomeIcon className='icon' icon={faArrowDown} />
