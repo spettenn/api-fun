@@ -1,39 +1,35 @@
-/* import axios from 'axios';
-import { useEffect, useState } from 'react';
-/* const axios = require('axios'); */
-/*
-const options = {
-	method: 'GET',
-	url: 'https://joke3.p.rapidapi.com/v1/joke',
-	params: { nsfw: 'true' },
-	headers: {
-		'X-RapidAPI-Key': '6727fd07abmshdddcbc34023c21fp187140jsnab366a7a51bd',
-		'X-RapidAPI-Host': 'joke3.p.rapidapi.com',
-	},
-};
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-axios
-	.request(options)
-	.then(function (response) {
-		console.log(response.data);
-	})
-	.catch(function (error) {
-		console.error(error);
-	});
-
-export default function Joke() {
-	const [joke, setJoke] = useState({});
+const DadJoke = () => {
+	const [joke, setJoke] = useState('');
 
 	useEffect(() => {
-		fetch('https://joke3.p.rapidapi.com/v1/joke?nsfw=true', options)
-			.then((response) => response.json())
-			.then((data) => {
-				setJoke(data);
+		const options = {
+			method: 'GET',
+			url: 'https://dad-jokes.p.rapidapi.com/random/joke',
+			headers: {
+				'X-RapidAPI-Key': '6727fd07abmshdddcbc34023c21fp187140jsnab366a7a51bd',
+				'X-RapidAPI-Host': 'dad-jokes.p.rapidapi.com',
+			},
+		};
+
+		axios
+			.request(options)
+			.then(function (response) {
+				setJoke(response.data);
+			})
+			.catch(function (error) {
+				console.error(error);
 			});
 	}, []);
+
 	return (
-		<div className='joke_container'>
-			<div className='joke'>{joke}</div>
+		<div>
+			<h2>Dad Joke</h2>
+			<p>{joke}</p>
 		</div>
 	);
-} */
+};
+
+export default DadJoke;

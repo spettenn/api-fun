@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap');
 
+@import "../src/style/form.css";
+@import "../src/style/rocket.css";
+
 * {
     scroll-behavior: smooth;
 }
@@ -59,3 +62,35 @@ h1 {
     margin-top: 1rem;
 }
 
+.section_three_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.weather {
+    margin: auto;
+}
+.weather_container {
+    margin: auto;
+    color: white    ;
+}
+#weather-icon {
+margin: auto;
+}
+
+.image_carousel {
+    max-height: 300px;
+}
+.slick-list {
+    margin: auto;
+    max-height: 300px;
+}
+.slick-track {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}

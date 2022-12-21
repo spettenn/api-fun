@@ -1,0 +1,73 @@
+.rocket-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .rocket {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 100px;
+    background: black;
+    border-radius: 10px 10px 50% 50%;
+  }
+  
+  .nose {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+  }
+  
+  .fin {
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+  }
+  
+  .fin-left {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .fin-right {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .engine {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+  }
+  
+
+  @keyframes rocket-animation {
+    from {
+      left: -100px;
+    }
+    to {
+      left: 100%;
+    }
+  }
+  
+  .rocket {
+    animation: rocket-animation 5s linear infinite;
+  }

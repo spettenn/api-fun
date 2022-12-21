@@ -1,0 +1,33 @@
+.section_form_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form_input {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 1rem;
+    border: 10px solid radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
+}
+
+
+.submit_btn {
+    color: white;
+    background-color: #268838;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #268838;
+    margin: auto;
+    cursor: pointer;
+}
