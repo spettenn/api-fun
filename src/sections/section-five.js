@@ -43,7 +43,7 @@ function SectionFive() {
 				<Countdown />
 			</div>
 			<div className='font_container'>
-				<a href='#section_five'>
+				<a href='#section_six'>
 					<FontAwesomeIcon className='icon' icon={faArrowDown} />
 				</a>
 			</div>
