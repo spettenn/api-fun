@@ -10,7 +10,7 @@ const Countdown = () => {
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			const newYear = new Date('January 1, 2023 00:00:00');
+			const newYear = new Date('January 1, 2024 00:00:00');
 			const currentTime = new Date();
 			const diff = newYear - currentTime;
 
@@ -28,7 +28,7 @@ const Countdown = () => {
 	}, []);
 
 	return (
-		<div className='new_year_container'>
+		<div className='countdown_new_years'>
 			{timeLeft.days} days, {timeLeft.hours} hours, {timeLeft.minutes} minutes,{' '}
 			{timeLeft.seconds} seconds
 		</div>
