@@ -3,6 +3,7 @@
 @import "../src/style/form.css";
 @import "../src/style/rocket.css";
 @import "../src/style/card.css";
+@import "../src/style/countries.css";  
 
 * {
     scroll-behavior: smooth;
@@ -71,7 +72,7 @@ h1 {
     margin: auto;
     border: 2px solid ;
     border-image: linear-gradient(to right, red,green,  blue); 
-  border-image-slice: 1;
+    border-image-slice: 1;
     border-radius: 3px;
 }
 .weather {

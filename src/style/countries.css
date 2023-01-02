@@ -1,0 +1,22 @@
+.country_container {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#country-select {
+    max-width: 30rem;
+    width: 50%;
+    margin: auto;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #704b4b;
+    background-color: transparent;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: 1s;
+    background-color: #212534;
+}

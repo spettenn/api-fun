@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
+import CountriesList from '../components/countries';
 
 const Sectionsix = styled.section`
 	height: 100vh;
@@ -19,7 +20,7 @@ function SectionSix() {
 				</a>
 			</div>
 			<h1 className='section_two_title'>
-				SECTION SIX <br />
+				<CountriesList />
 			</h1>
 			<div className='font_container'>
 				<a href='#section_seven'>

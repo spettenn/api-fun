@@ -29,6 +29,7 @@ const Countdown = () => {
 
 	return (
 		<div className='countdown_new_years'>
+			<h3>Time left until new year!</h3> <br />
 			{timeLeft.days} days, {timeLeft.hours} hours, {timeLeft.minutes} minutes,{' '}
 			{timeLeft.seconds} seconds
 		</div>

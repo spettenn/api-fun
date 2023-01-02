@@ -38,7 +38,6 @@ function SectionFive() {
 					<FontAwesomeIcon className='icon' icon={faArrowUp} />
 				</a>
 			</div>
-			<h1 className='section_two_title'>SECTION FIVE</h1>
 			<div className='section_five_main'>
 				<Countdown />
 			</div>
