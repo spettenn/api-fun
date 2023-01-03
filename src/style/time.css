@@ -1,0 +1,20 @@
+.clock_container {
+    border: 1px solid white;
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+.countdown_new_years {
+    width: fit-content;
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 5px;
+}

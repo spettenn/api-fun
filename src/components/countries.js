@@ -50,7 +50,6 @@ const CountriesList = () => {
 					<p>{selectedCountryData.timezones[0]}</p>
 					<p>Currency:</p>
 					<p>{selectedCountryData.currencies[0].name}</p>
-					{/* Render country data here */}
 				</div>
 			)}
 		</div>

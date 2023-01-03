@@ -15,7 +15,7 @@ function Clock() {
 	const seconds = time.getSeconds();
 
 	return (
-		<div>
+		<div className='clock_container'>
 			{hours}:{minutes}:{seconds}
 		</div>
 	);
