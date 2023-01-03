@@ -21,6 +21,7 @@ function SectionThree() {
 					<FontAwesomeIcon className='icon' icon={faArrowUp} />
 				</a>
 			</div>
+
 			<div className='section_three_main'>
 				<Weather />
 				<div id='weather-icon'></div>

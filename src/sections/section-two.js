@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import parallaxTiltEffect from '../components/cardTwo.js';
 
-import Clock from '../components/clock';
 /* import getEpicData from '../components/earth'; */
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -25,10 +25,22 @@ function SectionTwo() {
 			</div>
 			<h1 className='section_two_title'>
 				SECTION TWO <br />
-				<Clock />
 			</h1>
 			<div className='section_two_main'>
-				<div class='card'>This is a Card</div>
+				<parallaxTiltEffect />
+				<div className='card'>This is a Card</div>
+				<div className='flip-card'>
+					<div className='flip-card-inner'>
+						<div className='flip-card-front'>
+							<h1>shaloom</h1>
+						</div>
+						<div className='flip-card-back'>
+							<h1>John Doe</h1>
+							<p>Architect & Engineer</p>
+							<p>We love that guy</p>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div className='font_container'>
 				<a href='#section_three'>

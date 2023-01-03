@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Clock from '../components/clock';
 
 const Countdown = () => {
 	const [timeLeft, setTimeLeft] = useState({
@@ -29,6 +30,7 @@ const Countdown = () => {
 
 	return (
 		<div className='countdown_new_years'>
+			<Clock />
 			<h3>Time left until new year!</h3> <br />
 			{timeLeft.days} days, {timeLeft.hours} hours, {timeLeft.minutes} minutes,{' '}
 			{timeLeft.seconds} seconds

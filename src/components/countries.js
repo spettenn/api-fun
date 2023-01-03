@@ -10,7 +10,7 @@ const CountriesList = () => {
 			const response = await fetch('https://restcountries.com/v2/all');
 			const data = await response.json();
 			setCountries(data);
-			console.log(data);
+			console.log(data.slice(0, 20));
 		};
 		fetchCountries();
 	}, []);
@@ -36,20 +36,30 @@ const CountriesList = () => {
 			</select>
 			{selectedCountry && (
 				<div>
-					<h2>{selectedCountry}</h2>
-					<h5>{selectedCountryData.nativeName}</h5>
+					<div className='inner_container'>
+						<h2 className='country_title'>{selectedCountry}</h2>
+						<h5 className='country_title'>{selectedCountryData.nativeName}</h5>
+					</div>
 					<img
 						src={selectedCountryData.flag}
 						height='30px'
 						width='40px'
 						alt={`Flag of ${selectedCountry}`}
 					/>
-					<p>Capital:</p>
-					<p>{selectedCountryData.capital}</p>
-					<p>TimeZone:</p>
-					<p>{selectedCountryData.timezones[0]}</p>
-					<p>Currency:</p>
-					<p>{selectedCountryData.currencies[0].name}</p>
+					<div className='inner_container'>
+						<p className='country_txt'>Capital:</p>
+						<p className='country_txt'>{selectedCountryData.capital}</p>
+					</div>
+					<div className='inner_container'>
+						<p className='country_txt'>TimeZone:</p>
+						<p className='country_txt'>{selectedCountryData.timezones[0]}</p>
+					</div>
+					<div className='inner_container'>
+						<p className='country_txt'>Currency:</p>
+						<p className='country_txt'>
+							{selectedCountryData.currencies[0].name}
+						</p>
+					</div>
 				</div>
 			)}
 		</div>

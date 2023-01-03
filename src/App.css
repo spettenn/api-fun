@@ -5,7 +5,8 @@
 @import "../src/style/card.css";
 @import "../src/style/countries.css";  
 @import "../src/style/time.css";  
-
+@import "../src/style/weather.css";  
+@import "../src/style/random.css";  
 * {
     scroll-behavior: smooth;
 }
@@ -35,6 +36,14 @@
 }
 h1 {
     font-family: 'Raleway', sans-serif;
+}
+.section_two_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 100rem;
+    margin: auto;
 }
 .section_two_title {
     text-align: center;
@@ -72,20 +81,11 @@ h1 {
     width: 30%;
     margin: auto;
     border: 2px solid ;
-    border-image: linear-gradient(to right, red,green,  blue); 
+    border-image: linear-gradient(to right, purple,yellow, red,green,  blue); 
     border-image-slice: 1;
     border-radius: 3px;
 }
-.weather {
-    margin: auto;
-}
-.weather_container {
-    margin: auto;
-    color: white    ;
-}
-#weather-icon {
-margin: auto;
-}
+
 
 .image_carousel {
     max-height: 300px;

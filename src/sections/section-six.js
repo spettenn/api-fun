@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import CountriesList from '../components/countries';
 
 const Sectionsix = styled.section`
-	height: 100vh;
+	min-height: 100vh;
+	height: fit-content;
 	background-color: #212534;
 	display: flex;
 	flex-direction: column;

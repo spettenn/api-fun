@@ -1,19 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-/* import sunny from '../assets/sunny.jpg';
-import cloudy from '../assets/cloudy.jpg';
-import rainy from '../assets/rainy.jpg'; */
 
-/* const weatherImages = {
-	sunny: '../assets/sunny.jpg',
-	cloudy: '../assets/cloudy.jpg',
-	rainy: '../assets/rainy.jpg',
-};
- */
 function Weather() {
 	const [weatherData, setWeatherData] = useState(null);
 	const [error, setError] = useState(null);
-	/* const [backgroundImage, setBackgroundImage] = useState(null); */
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -29,7 +19,7 @@ function Weather() {
 					}
 				);
 				setWeatherData(result.data);
-				/* setBackgroundImage([result.data.weather[0].main.toLowerCase()]); */
+
 				console.log(result.data.weather[0].main.toLowerCase());
 				const iconCode = result.data.weather[0].icon;
 				document.querySelector(
@@ -47,17 +37,35 @@ function Weather() {
 	}
 
 	if (!weatherData) {
-		return <div>Loading...</div>;
+		return (
+			<div>
+				<div className='container'>
+					<div className='box'>
+						<div className='loader'>
+							<span></span>
+						</div>
+						<div className='loader'>
+							<span></span>
+						</div>
+						<div className='loader'>
+							<i></i>
+						</div>
+						<div className='loader'>
+							<i></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		);
 	}
 
 	return (
 		<div className='weather_container'>
-			<h1>
+			<h1 className='weather_place'>
 				Current weather in {weatherData.name}, {weatherData.sys.country}
 			</h1>
-			<p>{weatherData.weather[0].description}</p>
-			<p>{weatherData.main.temp}°C</p>
-			{/* 	<img src={setBackgroundImage} alt={weatherData.weather[0].description} /> */}
+			<p className='weather_desc'>{weatherData.weather[0].description}</p>
+			<p className='weather_temp'>{weatherData.main.temp}°C</p>
 		</div>
 	);
 }
