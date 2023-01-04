@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+// sets the weather data from the API
 function Weather() {
 	const [weatherData, setWeatherData] = useState(null);
 	const [error, setError] = useState(null);
