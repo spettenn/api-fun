@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Clock from '../components/clock';
+import Clock from './clock';
 
 const Countdown = () => {
 	const [timeLeft, setTimeLeft] = useState({
