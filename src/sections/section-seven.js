@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
+import { scrapeHeadlines } from '../components/vg';
 
 const Sectionseven = styled.section`
 	height: 100vh;
@@ -9,6 +10,10 @@ const Sectionseven = styled.section`
 	flex-direction: column;
 	justify-content: space-between;
 `;
+
+scrapeHeadlines('https://www.vg.no/').then((headlines) => {
+	console.log(headlines);
+});
 
 function SectionSeven() {
 	return (
