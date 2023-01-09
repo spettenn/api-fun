@@ -23,6 +23,7 @@ let scraped_headlines = [];
 	console.log(scraped_headlines);
 })();
  */
+/*
 import React, { useState, useEffect } from 'react';
 import cheerio from 'cheerio';
 import puppeteer from 'puppeteer';
@@ -66,3 +67,4 @@ const MyComponent = (props) => {
 };
 
 export default MyComponent;
+ */

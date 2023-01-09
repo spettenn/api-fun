@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
+/* import LineChart from '../components/chart'; */
 
 const Sectionseven = styled.section`
 	height: 100vh;

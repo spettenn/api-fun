@@ -8,7 +8,7 @@ import SectionSix from './sections/section-six';
 import SectionSeven from './sections/section-seven';
 import SectionEight from './sections/section-eight';
 
-import Counting from './components/arrayDabble';
+/* import Counting from './components/arrayDabble'; */
 
 function App() {
 	return (
