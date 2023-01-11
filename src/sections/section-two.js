@@ -10,7 +10,7 @@ import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 const SectionFun = styled.section`
 	height: 100vh;
 	background-color: #212534;
-	display: flex;ß
+	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 `;
